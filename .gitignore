@@ -1,0 +1,5 @@
+.python/
+.secrets/
+.streamlit/
+stats/
+.DS_Store
