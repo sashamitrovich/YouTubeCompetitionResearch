@@ -157,7 +157,7 @@ with st.sidebar:
         st.success('API key already provided!', icon='✅')
         GoogleApiKey = st.secrets['GOOGLE_API_KEY'] 
     else:
-        replicate_api = st.text_input('Enter Google API token:', type='password')
+        GoogleApiKey = st.text_input('Enter Google API token:', type='password')
         if not (replicate_api.startswith('r8_') and len(replicate_api)==40):
             st.warning('Please enter your credentials!', icon='⚠️')
         else:
